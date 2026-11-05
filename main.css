@@ -2,37 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
-
-
+  font-family: 'Poppins', sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
- 
+  scroll-padding-top: 80px;
 }
 
 body {
-  height: 100vh;
-   background-color: var(--main-color);
-
+  min-height: 100vh;
+  background-color: var(--main-color);
 }
-
-
-
-
-
-
-
 
 :root {
   --main-color: #131313;
-
-
   --second-color: whitesmoke;
   --third-color: #bfa8ff;
-
-
 }
 
 header {
@@ -40,15 +26,11 @@ header {
   top: 0;
   width: 100%;
   z-index: 999;
-
 }
-
-
 
 .navbar {
   width: 100%;
   height: 80%;
-
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -58,7 +40,6 @@ header {
 
 .navbar .logo img {
   width: 7rem;
-
 }
 
 #ham {
@@ -71,9 +52,8 @@ header {
   display: none;
 }
 
-
-
 .slide-menu {
+  display: none;
   position: absolute;
   box-sizing: border-box;
   border-radius: 20px;
@@ -86,19 +66,14 @@ header {
   background: rgba(18, 17, 17, 0.981);
   border-bottom: 1px solid rgba(191, 168, 255, 0.35);
   border-top: 1px solid rgba(191, 168, 255, 0.35);
-  
- 
-
 }
 
 .slide-menu .link {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: right;
   margin-right: 50px;
-
 }
 
 .link {
@@ -106,7 +81,6 @@ header {
   list-style: none;
   display: flex;
   gap: 2rem;
-
 }
 
 .menu-list {
@@ -114,22 +88,11 @@ header {
   color: var(--third-color);
   font-weight: 200;
   transition: all 0.3s ease;
-
 }
 
 .menu-list:hover {
-
   color: var(--second-color);
-
 }
-
-
-
-
-
-
-
-
 
 main section {
   min-height: 100vh;
@@ -138,13 +101,8 @@ main section {
   box-sizing: border-box;
 }
 
-
-
 #home {
-
   height: 100vh;
-
-
 }
 
 .home-content {
@@ -154,7 +112,6 @@ main section {
   width: 90vw;
   margin: auto;
   height: 90%;
-
 }
 
 .name h1 {
@@ -162,7 +119,6 @@ main section {
   color: var(--second-color);
   font-size: 3.5rem;
   font-weight: 700;
-
 }
 
 .name p {
@@ -170,13 +126,11 @@ main section {
   color: var(--second-color);
   font-size: 1.4rem;
   font-weight: 200;
-
 }
 
 .name .bttn {
   width: 11rem;
   margin-top: 1rem;
-
   height: 2.5rem;
   background: var(--third-color);
   color: var(--second-color);
@@ -188,14 +142,12 @@ main section {
   transition: all 0.3s ease;
 }
 
-
 .bttn:hover {
   transform: translateX(10px);
 }
 
 .home-logo img {
   width: 45rem;
-
 }
 
 .social-links {
@@ -204,8 +156,6 @@ main section {
 
 .social-links ul li {
   list-style: none;
-  margin-top: 1rem;
-
   margin-top: -1rem;
   /* background: var(--third-color); */
 }
@@ -221,7 +171,6 @@ main section {
   transform: scale(1.1);
 }
 
-
 .about-info {
   position: absolute;
   width: 80rem;
@@ -232,16 +181,10 @@ main section {
   border-radius: 10px;
   /* background: rgba(0, 0, 0, 0.301); */
   border: 2px solid var(--third-color);
-
   background: transparent;
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 90px var(--third-color);
-
-
 }
-
-
-
 
 .close-btn {
   position: absolute;
@@ -253,42 +196,18 @@ main section {
   font-size: 3rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-
 }
 
 .close-btn:hover {
   color: var(--third-color);
   transform: scale(1.2) rotate(180deg);
-  ;
-
 }
 
 #about {
-
-  height: 100vh;
-
- 
-
-
+  min-height: 100vh;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .about-section {
-
   width: 60%;
   margin: auto;
   padding-top: 2rem;
@@ -306,10 +225,9 @@ main section {
   font-size: 5rem;
   font-weight: 800;
   margin-top: -1rem;
-  font-family: 'Baloo Bhai 2', 'cursive';
+  font-family: 'Baloo Bhai 2', cursive;
   letter-spacing: -3px;
 }
-
 
 .about-section p {
   color: var(--third-color);
@@ -317,9 +235,7 @@ main section {
   font-weight: 200;
   margin-top: -1rem;
   width: 70%;
-
 }
-
 
 .about-box {
   display: flex;
@@ -335,17 +251,9 @@ main section {
   height: 280px;
   box-sizing: border-box;
   border-radius: 10px;
-
   background: transparent;
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 10px var(--third-color);
-
-
-  
-  
- 
-
-
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -368,20 +276,18 @@ main section {
   margin-top: 1rem;
 }
 
+/* -----------project----------- */
 #project {
-  height: 280vh;
+  height: auto;
+  padding-bottom: 6rem;
   /* background-color: rgb(128, 109, 0); */
 }
 
 .project-section {
   width: 60%;
   margin: auto;
-
   padding-top: 2rem;
-
-
 }
-
 
 .project-info h3 {
   font-size: 1.5rem;
@@ -395,10 +301,9 @@ main section {
   font-size: 5rem;
   font-weight: 800;
   margin-top: -1rem;
-  font-family: 'Baloo Bhai 2', 'cursive';
+  font-family: 'Baloo Bhai 2', cursive;
   letter-spacing: -3px;
 }
-
 
 .project-info p {
   color: var(--third-color);
@@ -406,47 +311,40 @@ main section {
   font-weight: 200;
   margin-top: -1rem;
   width: 70%;
-
 }
 
-
-
-
+/* relative parent: line, cards and dots are all positioned against this */
+.pb1 {
+  position: relative;
+  height: 140rem;
+}
 
 .vertical-timeline {
   content: "";
   position: absolute;
-
-  height: 230%;
-
-  margin-top: 2.8rem;
+  top: 0;
   left: 50%;
+  transform: translateX(-50%);
+  height: calc(100% - 2.8rem);
+  margin: 0;
+  margin-top: 2.8rem;
   border: 5px solid white;
   border-radius: 20px;
-
 }
-
-
 
 .project-boxes {
   width: 400px;
-
   height: 470px;
   margin-top: 50px;
   box-sizing: border-box;
-
   border-radius: 10px;
-
   background: transparent;
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 20px var(--third-color);
-
-
 }
 
 .project-boxes img {
   width: 90%;
-  background: red;
   margin-left: 5%;
   margin-top: 20px;
   border-radius: 20px;
@@ -455,44 +353,38 @@ main section {
 .project-boxes h2 {
   color: var(--second-color);
   font-size: 1.5rem;
-  margin: 20PX 20px;
-
+  margin: 20px 20px;
 }
 
 .project-boxes p {
   color: var(--third-color);
   font-size: 0.9rem;
   margin: 20px 20px;
-
 }
 
+/* left cards sit left of the centre line, right cards sit right of it */
 #box1 {
   position: absolute;
   margin-top: 2rem;
-
-  left: 500px;
+  right: calc(50% + 60px);
 }
 
 #box2 {
   position: absolute;
   margin-top: 35rem;
-
-  right: 500px;
+  left: calc(50% + 60px);
 }
 
 #box3 {
   position: absolute;
   margin-top: 70rem;
-
-  left: 500px;
+  right: calc(50% + 60px);
 }
 
 #box4 {
   position: absolute;
   margin-top: 105rem;
-
-  right: 500px;
- 
+  left: calc(50% + 60px);
 }
 
 .project-dot {
@@ -500,57 +392,43 @@ main section {
   box-sizing: border-box;
   border-radius: 50px;
   border: 0px solid white;
-
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 #pp1 {
   position: absolute;
   margin-top: 4rem;
-  left: 925px;
-
   background: #000;
 }
 
 #pp2 {
   position: absolute;
   margin-top: 37rem;
-  left: 925px;
-
   background: #000;
 }
 
 #pp3 {
   position: absolute;
   margin-top: 72rem;
-  left: 925px;
-
   background: #000;
 }
 
 #pp4 {
   position: absolute;
   margin-top: 107rem;
-  left: 925px;
-
   background: #000;
 }
 
-
-
-
-
-
-
+/* -----------tech----------- */
 #tech {
-  height: 100vh;
-
+  min-height: 100vh;
 }
 
 .tech-section {
   width: 60%;
   margin: auto;
   padding-top: 2rem;
-
 }
 
 .tech-section h3 {
@@ -558,7 +436,6 @@ main section {
   font-weight: 500;
   color: var(--third-color);
   margin-top: 4.5rem;
-
 }
 
 .tech-section h4 {
@@ -566,10 +443,8 @@ main section {
   font-size: 5rem;
   font-weight: 800;
   margin-top: -1rem;
-  font-family: 'Baloo Bhai 2', 'cursive';
+  font-family: 'Baloo Bhai 2', cursive;
   letter-spacing: -3px;
-
-
 }
 
 .tech-box {
@@ -579,11 +454,8 @@ main section {
   width: 90%;
   margin: auto;
   margin-top: 4rem;
-   flex-wrap: nowrap;
-
+  flex-wrap: nowrap;
 }
-
-
 
 .tech-boxes {
   width: 150px;
@@ -591,17 +463,10 @@ main section {
   box-sizing: border-box;
   border-radius: 10px;
   text-align: center;
-
   background: transparent;
   backdrop-filter: blur(15px);
   box-shadow: 0px 0px 20px var(--third-color);
-
-
-
 }
-
-
-
 
 .tech-boxes img {
   width: 45%;
@@ -617,15 +482,9 @@ main section {
   margin-top: 0.5rem;
 }
 
-
-
-
-
-
+/* -----------contact----------- */
 #contact {
-  height: 100vh;
-
-
+  min-height: 100vh;
 }
 
 .contact-section {
@@ -633,7 +492,6 @@ main section {
   margin: auto;
   padding-top: 2rem;
   position: relative;
-
 }
 
 .contact-section h3 {
@@ -641,7 +499,6 @@ main section {
   font-weight: 500;
   color: var(--third-color);
   margin-top: 3rem;
-
 }
 
 .contact-section h4 {
@@ -649,14 +506,12 @@ main section {
   font-size: 5rem;
   font-weight: 800;
   margin-top: -1rem;
-  font-family: 'Baloo Bhai 2', 'cursive';
+  font-family: 'Baloo Bhai 2', cursive;
   letter-spacing: -3px;
-
 }
 
 .contact-form {
   width: 40%;
-  ;
   margin-top: 4rem;
   box-sizing: border-box;
   border-radius: 10px;
@@ -664,13 +519,9 @@ main section {
   backdrop-filter: blur(20px);
   box-shadow: 0px 0px 60px var(--third-color);
   padding: 20px;
-
 }
 
-
-
 .contact-form label {
-
   color: var(--second-color);
   font-size: 1.1rem;
   font-weight: 200;
@@ -680,21 +531,18 @@ main section {
 }
 
 .contact-form input,
-textarea {
+.contact-form textarea {
   width: 90%;
   height: 50px;
   margin-left: 3%;
   padding: 10px;
   margin-top: 0.4rem;
-
   border-radius: 10px;
   box-sizing: border-box;
   border: 0px;
   background: rgba(0, 0, 0, 0.521);
   max-width: 90%;
   color: var(--third-color);
-
-
 }
 
 .contact-form textarea {
@@ -716,15 +564,12 @@ textarea {
   font-size: 1.2rem;
   font-weight: 200;
   cursor: pointer;
-
 }
 
 .contact-form button:hover {
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
 }
-
-
 
 .contact-3d {
   position: absolute;
@@ -733,19 +578,20 @@ textarea {
   width: 60%;
   height: 28rem;
   border-radius: 10px;
-
-
-
-
 }
 
 .contact-3d model-viewer {
   width: 100%;
   height: 100%;
   background: transparent;
-
-
 }
 
+/* -----------global safety----------- */
+img {
+  max-width: 100%;
+}
 
-
+:focus-visible {
+  outline: 2px solid var(--third-color);
+  outline-offset: 3px;
+}
