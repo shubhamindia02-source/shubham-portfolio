@@ -14,11 +14,7 @@
     }
 
     /* -----------home--------------*/
-    #home {
-        /* height: auto; */
-           background-color: red;
-        /* min-height: 100vh; */
-    }
+    
 
     .home-content {
         flex-direction: column;
@@ -28,7 +24,7 @@
         height: auto;
       
       
-        margin-top: 150px;
+        margin-top: 70px;
     }
 
     .name h1 {
@@ -67,7 +63,7 @@
     /* -----------about--------------*/
     #about {
         max-width: 100vw;
-        /* height: fit-content; */
+       
         background-color: green;
         
         
@@ -105,7 +101,7 @@
     /* -----------project----------- */
     #project {
         max-width: 100vw;
-        /* height: auto; */
+    
         background-color: gray;
         height: 330vh;
     
@@ -133,7 +129,7 @@
 
     /* line and dots stay near the left edge of the screen */
     .vertical-timeline {
-        /* left: calc(22px - 10vw); */
+   
         left: 0;
         border: 3px solid white;
         height: 260vh;
@@ -149,18 +145,18 @@
 
     .project-boxes {
         width: 75vw;
-        /* height: 34rem; */
+        
     }
 
     .project-boxes img {
         height: 11rem;
-        /* object-fit: cover; */
+        
     }
 
     .project-boxes p {
         font-size: 0.9rem;
         width: fit-content;
-        /* width: 90%; */
+       
     }
 
     #box1 {
