@@ -7,7 +7,7 @@
 
 html {
   scroll-behavior: smooth;
-  
+  /* scroll-padding-top: 80px; */
 }
 
 body {
@@ -241,9 +241,10 @@ main section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
+  width: 100%;
   margin: auto;
   margin-top: 10rem;
+  
 }
 
 .boxes {
@@ -256,6 +257,7 @@ main section {
   box-shadow: 0px 0px 10px var(--third-color);
   text-align: center;
   transition: all 0.3s ease;
+  
 }
 
 .boxes:hover {
@@ -278,9 +280,7 @@ main section {
 
 /* -----------project----------- */
 #project {
-  height: auto;
-  padding-bottom: 6rem;
-  /* background-color: rgb(128, 109, 0); */
+ 
 }
 
 .project-section {
@@ -313,7 +313,7 @@ main section {
   width: 70%;
 }
 
-/* relative parent: line, cards and dots are all positioned against this */
+
 .pb1 {
   position: relative;
   height: 140rem;
