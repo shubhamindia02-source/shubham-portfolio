@@ -1,0 +1,982 @@
+
+
+/* 
+@media (max-width:767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #ham img {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+
+
+    #home {
+       
+        max-width: 100vw;
+       
+
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+
+    }
+
+    .name h1 {
+        margin-top: 150px;
+        font-size: 2.5rem;
+
+    }
+
+    .name p {
+        margin-top: -10px;
+        font-size: 1.1rem;
+
+    }
+
+    .home-logo img {
+        width: 90%;
+        margin: 30px 30px;
+        align-items: center;
+    }
+
+    .social-links {
+
+        margin: auto;
+    }
+
+    .social-links ul li {
+        display: inline-block;
+        align-items: center;
+
+    }
+
+   
+
+    #about {
+
+        max-width: 100vw;
+       
+
+        height: fit-content;
+
+    }
+
+
+    .about-section {
+
+        width: 80%;
+
+        
+    }
+
+    .about-section h4 {
+        font-size: 4rem;
+    }
+
+    .about-section p {
+        font-size: 1.1rem;
+        width: 100%;
+
+    }
+
+    .about-box {
+
+        flex-direction: column;
+        margin-top: 2px;
+
+        width: 90%;
+
+
+    }
+
+    .boxes {
+        margin-top: 50px;
+        width: 90%;
+
+
+
+
+    }
+
+
+
+
+    #project {
+        max-width: 100vw;
+        background-color: red;
+                
+
+
+    }
+
+
+    .project-section {
+
+        width: 80%;
+
+       
+    }
+
+    .project-info h4 {
+        font-size: 3.5rem;
+    }
+
+    .project-section p {
+        font-size: 1.1rem;
+        width: 100%;
+
+    }
+
+    .vertical-timeline {
+
+        left: auto;
+        margin-left: -20px;
+        border: 3px solid white;
+        height: 220%;
+    }
+
+
+    
+    #pp1,
+    #pp2,
+    #pp3,
+    #pp4 {
+        left: 0;
+    }
+
+
+    .project-boxes {
+        width: 75vw;
+
+        height: auto;
+    }
+
+    .project-boxes p {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    .project-dot {
+        width: 2.7rem;
+
+
+
+    }
+
+    #box1,
+    #box2,
+    #box3,
+    #box4 {
+        left: 0;
+        margin-left: 15vw;
+    }
+
+
+
+
+
+    #tech {
+        max-width: 100vw;
+        background-color: green;
+
+        height: fit-content;
+
+        margin-top: 100px;
+    }
+
+    .tech-section {
+        width: 80%;
+    }
+
+    .tech-section h4 {
+        font-size: 3.5rem;
+
+    }
+
+
+    .tech-box {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 4rem;
+
+
+
+
+    }
+
+    .tech-boxes {
+        width: 120px;
+        height: 120px;
+    }
+
+    #contact {
+        width: 100vw;
+       
+        height: fit-content;
+    }
+
+    .contact-section {
+        width: 90%;
+        padding-bottom: 20px;
+       
+    }
+
+    .contact-3d {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: 22rem;
+        margin-top: 3rem;
+    }
+
+
+    .contact-form {
+        width: 100%;
+        box-shadow: 0px 0px 20px var(--third-color);
+    }
+
+    .contact-form h3 {
+        font-size: 1.2rem;
+
+    }
+
+    .contact-form h4 {
+        font-size: 3.5rem;
+    }
+
+
+}
+
+
+
+
+@media (min-width:768px) and (max-width:991px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+
+    #home {
+        height: 100vh;
+        width: 100vw;
+
+
+    }
+
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 60px;
+        gap: 40px;
+
+
+
+    }
+
+    .name h1 {
+        margin-top: 100px;
+        font-size: 4rem;
+
+    }
+
+    .name p {
+        margin-top: -10px;
+        font-size: 1.5rem;
+
+    }
+
+    .home-logo img {
+        width: 80%;
+        margin: 30px 60px;
+        align-items: center;
+    }
+
+    .social-links {
+
+        margin-left: -250px;
+    }
+
+    .social-links ul li {
+        display: inline-block;
+        align-items: center;
+
+    }
+
+
+
+  
+
+    #about {
+        height: fit-content;
+        width: 100vw;
+
+
+    }
+
+
+    .about-section {
+
+        width: 80%;
+    }
+
+    .about-section h4 {
+        font-size: 3.9rem;
+    }
+
+
+    .about-section p {
+        font-size: 1.3rem;
+        width: 100%;
+
+    }
+
+    .about-box {
+
+        flex-direction: column;
+        margin-top: 2px;
+
+        width: 70%;
+
+
+    }
+
+    .boxes {
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    .boxes img {
+
+        width: 20%;
+    }
+
+
+
+
+
+    #project {
+        max-width: 100vw;
+        margin-top: 20px;
+        background-color: gray;
+        
+
+
+
+
+    }
+
+
+    .project-section {
+
+        width: 80%;
+        padding-top: 0rem;
+
+
+    }
+
+    .project-info h4 {
+        font-size: 4rem;
+    }
+
+    .project-section p {
+        font-size: 1.3rem;
+        width: 90%;
+    }
+
+    .vertical-timeline {
+
+        left: auto;
+        margin-left: -20px;
+        border: 3px solid white;
+        height: 180%;
+    }
+   
+
+
+
+
+
+
+
+
+
+
+
+
+} */
+
+/* =====================================================
+   MOBILE  (max-width:767px)
+   ===================================================== */
+@media (max-width:767px) {
+
+    body{
+        background-color: red;
+    }
+
+    #ham img {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* -----------home--------------*/
+    #home {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .name h1 {
+        margin-top: 150px;
+        font-size: 2.5rem;
+    }
+
+    .name p {
+        margin-top: -10px;
+        font-size: 1.1rem;
+    }
+
+    .home-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-logo img {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .social-links {
+        margin: auto;
+    }
+
+    .social-links ul {
+        text-align: center;
+    }
+
+    .social-links ul li {
+        display: inline-block;
+        align-items: center;
+    }
+
+    /* -----------about--------------*/
+    #about {
+        max-width: 100vw;
+        height: fit-content;
+    }
+
+    .about-section {
+        width: 80%;
+    }
+
+    .about-section h4 {
+        font-size: 4rem;
+    }
+
+    .about-section p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .about-box {
+        flex-direction: column;
+        margin-top: 2px;
+        width: 90%;
+    }
+
+    .boxes {
+        margin-top: 50px;
+        width: 90%;
+    }
+
+    /* -----------project----------- */
+    #project {
+        max-width: 100vw;
+        height: auto;
+    }
+
+    .project-section {
+        width: 80%;
+    }
+
+    .project-info h4 {
+        font-size: 3.5rem;
+    }
+
+    .project-section p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    .pb1 {
+        height: 150rem;
+    }
+
+    /* line and dots stay near the left edge of the screen */
+    .vertical-timeline {
+        left: calc(22px - 10vw);
+        border: 3px solid white;
+    }
+
+    #box1,
+    #box2,
+    #box3,
+    #box4 {
+        left: 6vw;
+        right: auto;
+    }
+
+    .project-boxes {
+        width: 75vw;
+        height: 34rem;
+    }
+
+    .project-boxes img {
+        height: 11rem;
+        object-fit: cover;
+    }
+
+    .project-boxes p {
+        font-size: 0.9rem;
+        width: 90%;
+    }
+
+    #box1 {
+        margin-top: 2rem;
+    }
+
+    #box2 {
+        margin-top: 38rem;
+    }
+
+    #box3 {
+        margin-top: 74rem;
+    }
+
+    #box4 {
+        margin-top: 110rem;
+    }
+
+    #pp1,
+    #pp2,
+    #pp3,
+    #pp4 {
+        left: calc(22px - 10vw);
+    }
+
+    #pp1 {
+        margin-top: 4rem;
+    }
+
+    #pp2 {
+        margin-top: 40rem;
+    }
+
+    #pp3 {
+        margin-top: 76rem;
+    }
+
+    #pp4 {
+        margin-top: 112rem;
+    }
+
+    .project-dot {
+        width: 2.7rem;
+    }
+
+    /* -----------tech--------- */
+    #tech {
+        max-width: 100vw;
+        height: fit-content;
+        margin-top: 0;
+    }
+
+    .tech-section {
+        width: 80%;
+    }
+
+    .tech-section h4 {
+        font-size: 3.5rem;
+    }
+
+    .tech-box {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem 1rem;
+        justify-items: center;
+        width: 100%;
+    }
+
+    .tech-boxes {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* -----------contact--------- */
+    #contact {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .contact-section {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+    .contact-3d {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: 22rem;
+        margin-top: 3rem;
+    }
+
+    .contact-3d model-viewer {
+        touch-action: pan-y;
+    }
+
+    .contact-form {
+        width: 100%;
+        box-shadow: 0px 0px 20px var(--third-color);
+    }
+
+    .contact-form h3 {
+        font-size: 1.2rem;
+    }
+
+    .contact-form h4 {
+        font-size: 3.5rem;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET  (min-width:768px) and (max-width:991px)
+   ===================================================== */
+@media (min-width:768px) and (max-width:991px) {
+
+    body{
+        background-color: green;
+    }
+
+    #ham img {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* -----------home--------------*/
+    #home {
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .home-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .name h1 {
+        margin-top: 150px;
+        font-size: 3rem;
+    }
+
+    .name p {
+        font-size: 1.3rem;
+    }
+
+    .home-logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-logo img {
+        width: 60%;
+        margin: 30px auto;
+    }
+
+    .social-links {
+        margin: auto;
+    }
+
+    .social-links ul {
+        text-align: center;
+    }
+
+    .social-links ul li {
+        display: inline-block;
+    }
+
+    /* -----------about--------------*/
+    .about-section {
+        width: 80%;
+    }
+
+    .about-section p {
+        width: 90%;
+    }
+
+    .about-box {
+        width: 80%;
+        margin-top: 6rem;
+    }
+
+    .boxes {
+        width: 30%;
+    }
+
+    .boxes h3 {
+        font-size: 1.2rem;
+    }
+
+    /* -----------project----------- */
+    .project-section {
+        width: 80%;
+    }
+
+    .project-info h4 {
+        font-size: 4rem;
+    }
+
+    .project-info p {
+        width: 90%;
+    }
+
+    .project-boxes {
+        width: 300px;
+        height: 32rem;
+    }
+
+    .project-boxes img {
+        height: 11rem;
+        object-fit: cover;
+    }
+
+    #box1,
+    #box3 {
+        right: calc(50% + 40px);
+    }
+
+    #box2,
+    #box4 {
+        left: calc(50% + 40px);
+    }
+
+    /* -----------tech--------- */
+    .tech-section {
+        width: 80%;
+    }
+
+    .tech-section h4 {
+        font-size: 4rem;
+    }
+
+    .tech-box {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    /* -----------contact--------- */
+    .contact-section {
+        width: 85%;
+        padding-bottom: 20px;
+    }
+
+    .contact-section h4 {
+        font-size: 4rem;
+    }
+
+    .contact-3d {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: 24rem;
+        margin-top: 3rem;
+    }
+
+    .contact-3d model-viewer {
+        touch-action: pan-y;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+}
+
+
+/* =====================================================
+   LAPTOP  (min-width:992px) and (max-width:1199px)
+   ===================================================== */
+@media (min-width:992px) and (max-width:1199px) {
+
+    /* -----------home--------------*/
+
+      body{
+        background-color: rgb(19, 0, 128);
+    }
+
+    .home-content {
+        width: 92vw;
+    }
+
+    .name h1 {
+        font-size: 3rem;
+    }
+
+    .name p {
+        font-size: 1.2rem;
+    }
+
+    .home-logo img {
+        width: 28rem;
+    }
+
+    .social-links {
+        margin-right: 0;
+    }
+
+    /* -----------about--------------*/
+    .about-section {
+        width: 80%;
+    }
+
+    .about-section h4 {
+        font-size: 4.5rem;
+    }
+
+    .about-box {
+        width: 80%;
+        margin-top: 6rem;
+    }
+
+    .boxes {
+        width: 30%;
+    }
+
+    .boxes h3 {
+        font-size: 1.3rem;
+    }
+
+    /* -----------project----------- */
+    .project-boxes {
+        width: 340px;
+        height: auto;
+    }
+
+    #box1,
+    #box3 {
+        right: calc(50% + 50px);
+    }
+
+    #box2,
+    #box4 {
+        left: calc(50% + 50px);
+    }
+
+    /* -----------tech--------- */
+    .tech-section {
+        width: 80%;
+    }
+
+    .tech-box {
+        width: 100%;
+    }
+
+    /* -----------contact--------- */
+    .contact-section {
+        width: 85%;
+    }
+
+    .contact-form {
+        width: 44%;
+    }
+
+    .contact-3d {
+        width: 52%;
+    }
+
+}
+
+
+/* =====================================================
+   LARGE LAPTOP  (min-width:1200px) and (max-width:1399px)
+   ===================================================== */
+@media (min-width:1200px) and (max-width:1399px) {
+
+      body{
+        background-color: rgb(128, 0, 111);
+    }
+
+
+    /* -----------home--------------*/
+    .home-logo img {
+        width: 34rem;
+    }
+
+    .social-links {
+        margin-right: -6rem;
+    }
+
+    /* -----------about--------------*/
+    .about-box {
+        width: 70%;
+    }
+
+    /* -----------tech--------- */
+    .tech-section {
+        width: 70%;
+    }
+
+}
+
+
+/* =====================================================
+   DESKTOP  (min-width:992px) : hamburger menu never shows
+   ===================================================== */
+@media (min-width:992px) {
+    
+
+    .slide-menu {
+        display: none !important;
+    }
+
+}
