@@ -19,7 +19,8 @@
         align-items: center;
         justify-content: center;
         gap: 70px;
-        height: auto;
+        height: fit-content;
+       
         
       
         margin-top: 100px;
@@ -28,6 +29,7 @@
     .name h1 {
         
         font-size: 2.5rem;
+        margin-top: 100px;
     }
 
     .name p {
@@ -143,6 +145,7 @@
 
     .project-boxes {
         width: 75vw;
+        height: auto;
         
     }
 
@@ -154,6 +157,8 @@
     .project-boxes p {
         font-size: 0.9rem;
         width: fit-content;
+        
+        
        
     }
 
@@ -394,7 +399,7 @@
 
     .project-boxes {
         width: 280px;
-        /* height: 32rem; */
+       height: auto;
     }
 
     .project-boxes img {
