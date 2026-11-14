@@ -106,8 +106,12 @@ main section {
   box-sizing: border-box;
 }
 
+/* ------home________ */
+
 #home {
-  height: 100vh;
+  height: 90vh;
+
+  
 }
 
 .home-content {
@@ -116,7 +120,10 @@ main section {
   justify-content: space-around;
   width: 90vw;
   margin: auto;
-  height: 90%;
+  margin-top: 40px;
+ 
+  height: 70%;
+  
 }
 
 .name h1 {
@@ -176,6 +183,62 @@ main section {
   opacity: 1;
   transform: scale(1.1);
 }
+
+
+
+/* ------section 3  */
+
+.sthree {
+    margin-top: 70px;
+    background: #050508;
+    /* banner color code #050508 */
+    border-top: 1px solid rgba(255, 255, 255, 0.575);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.575);
+    padding: 18px 0px;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    gap: 0px;
+
+    animation: slide 15s linear infinite;
+
+
+}
+
+
+.names {
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    padding: 0 40px;
+    color: var(--third-color);
+    align-items: center;
+    white-space: nowrap;
+
+
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-70%);
+    }
+}
+
+
+
+
+
+
+
+
+/* -------about-------- */
 
 #about {
   min-height: 100vh;
@@ -254,6 +317,8 @@ main section {
 
 /* -----------project----------- */
 
+
+
 .project-section {
   width: 60%;
   margin: auto;
@@ -285,111 +350,98 @@ main section {
 }
 
 
-.pb1 {
-  position: relative;
-  height: 140rem;
+
+
+.box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+ background: transparent;
+ backdrop-filter: blur(20px);
+ padding: 20px 5px;
+box-sizing: border-box;
+border-radius: 10px;
+ 
+
+ margin-top: 50px;
+
+ border: 1px solid var(--third-color);
+ cursor: pointer;
+ transition: all .3s ease-in;
+ 
+
+
+
 }
 
-.vertical-timeline {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: calc(100% - 2.8rem);
-  margin: 0;
-  margin-top: 2.8rem;
-  border: 5px solid white;
+.box:hover{
+box-shadow: 0px 0px 10px var(--third-color);
+scale: 1.03;
+
+
+
+}
+
+
+
+
+.box img{
+  width: 70%;
+  margin-left:15%;
   border-radius: 20px;
 }
 
-.project-boxes {
-  width: 400px;
-  height: 470px;
-  margin-top: 50px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  background: transparent;
-  backdrop-filter: blur(15px);
-  box-shadow: 0px 0px 20px var(--third-color);
+.site-info{
+
+  margin-left: 50px;
+  
 }
 
-.project-boxes img {
-  width: 90%;
-  margin-left: 5%;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-
-.project-boxes h2 {
+.site-info h2{
+  font-size: 2rem;
   color: var(--second-color);
-  font-size: 1.5rem;
-  margin: 20px 20px;
 }
 
-.project-boxes p {
-  color: var(--third-color);
+.site-info a{
+   font-size: 1.1rem;  
+   text-decoration: none;
+   color: var(--third-color);
+   
+}
+
+.site-info .p1{
+  width: 80%;
   font-size: 0.9rem;
-  margin: 20px 20px;
+  color: var(--second-color);
+  font-style: italic;
+
 }
 
-/* left cards sit left of the centre line, right cards sit right of it */
-#box1 {
-  position: absolute;
-  margin-top: 2rem;
-  right: calc(50% + 60px);
-}
 
-#box2 {
-  position: absolute;
-  margin-top: 35rem;
-  left: calc(50% + 60px);
-}
 
-#box3 {
-  position: absolute;
-  margin-top: 70rem;
-  right: calc(50% + 60px);
-}
 
-#box4 {
-  position: absolute;
-  margin-top: 105rem;
-  left: calc(50% + 60px);
-}
 
-.project-dot {
-  width: 4rem;
-  box-sizing: border-box;
-  border-radius: 50px;
-  border: 0px solid white;
-  left: 50%;
-  transform: translateX(-50%);
-}
 
-#pp1 {
-  position: absolute;
-  margin-top: 4rem;
-  background: #000;
-}
 
-#pp2 {
-  position: absolute;
-  margin-top: 37rem;
-  background: #000;
-}
 
-#pp3 {
-  position: absolute;
-  margin-top: 72rem;
-  background: #000;
-}
 
-#pp4 {
-  position: absolute;
-  margin-top: 107rem;
-  background: #000;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* -----------tech----------- */
 #tech {
