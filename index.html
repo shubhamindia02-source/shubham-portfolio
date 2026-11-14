@@ -12,12 +12,17 @@
         href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Bree+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-    <script src="main.js"></script>
+  
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer@4.1.0/dist/model-viewer.min.js"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script>
 </head>
 
+
 <body>
+
+
+   
+
 
    
     <header>
@@ -31,16 +36,18 @@
                     <li><a href="#project" class="menu-list">Projects</a></li>
                     <li><a href="#tech" class="menu-list">Tech</a></li>
                     <li><a href="#contact" class="menu-list">Contact</a></li>
-                </ul></div>
-                 <div id="ham"><img src="IMAGE/hamburger.png" alt=""></div>
-                 <div class="slide-menu" id="menu2">
-                <ul class="link" id="primary-navigation">
+                </ul>
+            </div>
+            <div id="ham"><img src="IMAGE/hamburger.png" alt="Menu"></div>
+            <div class="slide-menu" id="menu2">
+                <ul class="link" id="primary-navigation-mobile">
                     <li><a href="#home" class="menu-list active">Home</a></li>
                     <li><a href="#about" class="menu-list">About</a></li>
                     <li><a href="#project" class="menu-list">Projects</a></li>
                     <li><a href="#tech" class="menu-list">Tech</a></li>
                     <li><a href="#contact" class="menu-list">Contact</a></li>
-                </ul></div>
+                </ul>
+            </div>
          
 
 
@@ -66,9 +73,9 @@
 
             <div class="social-links">
                 <ul>
-                    <li><a href=""><img src="IMAGE/behance.png" alt="behance icon"></a></li>
-                    <li><a href=""><img src="IMAGE/link.png" alt="linkedin icon"></a></li>
-                    <li><a href=""><img src="IMAGE/link.png" alt="github icon"></a></li>
+                    <li><a href="https://www.behance.net/shubhamarya24" target="_blank"><img src="IMAGE/behance.png" alt="behance icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/shubham-arya-3a2b3a266/" target="_blank"><img src="IMAGE/link.png" alt="linkedin icon"></a></li>
+                    <li><a href="https://github.com/shubhamindia02-source" target="_blank"><img src="IMAGE/github.png" alt="github icon"></a></li>
                 </ul>
             </div>
 
@@ -116,7 +123,7 @@
 
                 <h3>Project</h3>
                 <h4>My Work.</h4>
-                <p>Following projects showcases my skills and experience through real-world examples of my work. Each
+                <p class="pp">Following projects showcases my skills and experience through real-world examples of my work. Each
                     project is briefly described with links to code repositories and live demos in it. It reflects my
                     ability to solve complex problems, work with different technologies, and manage projects effectively
                 </p>
@@ -125,22 +132,29 @@
                 <hr class="vertical-timeline">
                 <div class="project-box">
 
-                    <div class="project-boxes" id="box1">
-                        <img src="IMAGE/ARENA.png" alt="">
+                    <a href="https://shubhamindia02-source.github.io/Arena-website/" target="_blank">
+                        <div class="project-boxes" id="box1">
+                        <img src="IMAGE/ARENA.jpg" alt="">
                         <h2>Arena Animation</h2>
                         <p class="p1">TalkNest is a real-time chat application that allows users to connect and
                             communicate instantly. With features like live messaging, user-friendly interface, and
                             seamless experience, it ensures smooth, interactive conversations across devices.</p>
 
-                    </div>
+                    </div></a>
+
+
+
+                         <a href="https://shubhamindia02-source.github.io/common-wealth-game/" target="_blank">
                     <div class="project-boxes" id="box2">
-                        <img src="IMAGE/p1.jpg" alt="">
+                        <img src="IMAGE/common wealth.jpg" alt="">
                         <h2>Common Wealths Games</h2>
                         <p class="p1">TalkNest is a real-time chat application that allows users to connect and
                             communicate instantly. With features like live messaging, user-friendly interface, and
                             seamless experience, it ensures smooth, interactive conversations across devices.</p>
 
-                    </div>
+                    </div></a>
+
+                         <a href="" target="_blank">
                     <div class="project-boxes" id="box3">
                         <img src="IMAGE/p1.jpg" alt="">
                         <h2>Luxe Loom</h2>
@@ -149,7 +163,10 @@
                             communicate instantly. With features like live messaging, user-friendly interface, and
                             seamless experience, it ensures smooth, interactive conversations across devices.</p>
 
-                    </div>
+                    </div></a>
+
+
+                         <a href="" target="_blank">
                     <div class="project-boxes" id="box4">
                         <img src="IMAGE/p1.jpg" alt="">
                         <h2>app</h2>
@@ -158,6 +175,7 @@
                             seamless experience, it ensures smooth, interactive conversations across devices.</p>
 
                     </div>
+                         </a>
 
                 </div>
 
@@ -272,50 +290,37 @@
 
 
 
-<!-- about info  box script -->
 <script>
-    $(document).ready(function () {
-        $('.about-info').hide();
-
-        $('.bttn').click(function () {
-            $('.about-info').fadeToggle(200);
+   $(document).ready(function(){
 
 
-        });
-        $('.close-btn').click(function () {
-            $('.about-info').fadeToggle(200);
-        });
-    });
+      $("#menu2").hide()
+
+      $("#ham").click(function(){
+
+        $("#menu2").slideToggle(500)
+      })
 
 
 
+        $(".menu-list").click(function(){
+
+        $("#menu2").slideToggle(500)
+      })
 
 
-</script>
 
 
-<!-- slide menu script in jqurey -->
-<script>
-    $(document).ready(function(){
-
-        $("#menu2").hide()
-
-        $("#ham").click(function(){
-            $("#menu2").slideToggle(500)
-
-        })
 
 
-        $(".link").click(function(){
-            $("#menu2").slideUp(500)
-        })
 
+   })
        
+          
 
 
-    })
+
 </script>
-
 
 
 

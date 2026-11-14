@@ -16,9 +16,14 @@ body {
 }
 
 :root {
-  --main-color: #131313;
+
+ 
+  --main-color: #101010;
+ 
   --second-color: whitesmoke;
-  --third-color: #bfa8ff;
+  --third-color:  #d7ff64;
+  /* --third-color: #bfa8ff; */
+   /* --main-color: #131313; */
 }
 
 header {
@@ -64,8 +69,8 @@ header {
   padding: 5px;
   /* z-index: 1000; */
   background: rgba(18, 17, 17, 0.981);
-  border-bottom: 1px solid rgba(191, 168, 255, 0.35);
-  border-top: 1px solid rgba(191, 168, 255, 0.35);
+  border-bottom: 1px solid #d7ff64;
+  border-top: 1px solid #d7ff64;
 }
 
 .slide-menu .link {
@@ -123,7 +128,8 @@ main section {
 
 .name p {
   margin-top: -20px;
-  color: var(--second-color);
+  /* color: var(--second-color); */
+  color: var(--third-color);
   font-size: 1.4rem;
   font-weight: 200;
 }
@@ -169,38 +175,6 @@ main section {
 .social-links a img:hover {
   opacity: 1;
   transform: scale(1.1);
-}
-
-.about-info {
-  position: absolute;
-  width: 80rem;
-  height: 35rem;
-  top: 20%;
-  left: 17%;
-  box-sizing: border-box;
-  border-radius: 10px;
-  /* background: rgba(0, 0, 0, 0.301); */
-  border: 2px solid var(--third-color);
-  background: transparent;
-  backdrop-filter: blur(15px);
-  box-shadow: 0px 0px 90px var(--third-color);
-}
-
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  background-color: transparent;
-  border: none;
-  color: var(--second-color);
-  font-size: 3rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.close-btn:hover {
-  color: var(--third-color);
-  transform: scale(1.2) rotate(180deg);
 }
 
 #about {
@@ -279,9 +253,6 @@ main section {
 }
 
 /* -----------project----------- */
-#project {
- 
-}
 
 .project-section {
   width: 60%;
@@ -591,7 +562,7 @@ img {
   max-width: 100%;
 }
 
-:focus-visible {
+/* :focus-visible {
   outline: 2px solid var(--third-color);
   outline-offset: 3px;
-}
+} */
