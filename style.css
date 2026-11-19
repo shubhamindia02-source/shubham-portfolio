@@ -156,6 +156,7 @@ nav {
 
     background-color: #10110f;
     backdrop-filter: blur(20);
+    
     /* background-color: transparent; */
 
 
@@ -387,7 +388,7 @@ nav {
 #about {
 
     padding: 50px;
-    height: 80vh;
+    height: fit-content;
     /* background-color: #d7ff64; */
 
 }
@@ -617,7 +618,7 @@ nav {
 
 #skill {
     padding: 50px;
-    height: 60vh;
+    height: fit-content;
 }
 
 .skill-container {
@@ -672,6 +673,7 @@ nav {
 
 .icons span {
     margin-left: 4px;
+    font-size: 0.7rem;
 }
 
 /* section 4 skill end here */

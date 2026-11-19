@@ -12,17 +12,18 @@
 
     nav {
         width: 95%;
-        margin-left:2.5%;
+        margin-left: 2.5%;
     }
 
     .main-menu {
         display: none;
     }
 
-    .ham-icon{
+    .ham-icon {
         display: block;
     }
 
+    /* home section */
     #home {
         margin-top: 90px;
     }
@@ -88,7 +89,7 @@
     /* section 2 about banner   */
 
     #about {
-     
+
         padding: 0;
         padding-top: 40px;
         height: fit-content;
@@ -138,21 +139,26 @@
 
     .card {
         width: 100%;
-        height: 150px;
+        /* height: 150px; */
+        height: fit-content;
+        padding-bottom: 10px;
 
     }
-    .card img{
+
+    .card img {
         width: 17%;
     }
+
+
 
     /* section 2 about banner end  */
 
 
     /* section 3 project start  */
 
-    #project{
+    #project {
         /* background-color: red; */
-           padding: 0;
+        padding: 0;
         padding-top: 40px;
         height: fit-content;
         padding-bottom: 40px;
@@ -165,79 +171,88 @@
         gap: 20px;
     }
 
-    .project-card{
+    .project-card {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .image {
         height: 160px;
     }
-    .text-top h2{
+
+    .text-top h2 {
         font-size: 0.6rem;
     }
 
-    .text-top2 h2{
+    .text-top2 h2 {
         font-size: 1rem;
     }
-    .card-text p{
+
+    .card-text p {
         font-size: 0.8rem;
         width: 90%;
         margin-top: 15px;
-        
+
     }
+
     /* section 3 project  end here */
     /* section 4 skill start here */
- 
- 
-    #skill{
 
-            padding: 0;
+
+    #skill {
+
+        padding: 0;
         padding-top: 40px;
         height: fit-content;
         padding-bottom: 40px;
 
     }
 
-  .skill-container  {
+    .skill-container {
         flex-direction: column;
-      
+
 
     }
 
-    .left-skill, .right-skill{
+    .left-skill,
+    .right-skill {
         width: 100%;
-        
-    } 
-      .left-skill h3{
-        
+
+    }
+
+    .left-skill h3 {
+
         font-size: 2.6rem;
 
-      }
-      .right-skill p {
+    }
+
+    .right-skill p {
         font-size: 0.9rem;
-        margin: 15px 0 15px ;
-      }
+        margin: 15px 0 15px;
+    }
 
-      
-.skill-box {
-   
-    grid-template-columns: repeat(2, 1fr);
 
-}
-.icons{
-    width: 95%;
-    margin: 5px;
-}
-.icons img {
-    width: 15%;
-    margin: 10px;
+    .skill-box {
 
-}
+        grid-template-columns: repeat(2, 1fr);
 
-.icons span {
-    font-size: 0.7rem;
+    }
 
-}
+    .icons {
+        width: 95%;
+        margin: 5px;
+    }
+
+    .icons img {
+        width: 15%;
+        margin: 10px;
+
+    }
+
+    .icons span {
+        font-size: 0.7rem;
+
+    }
 
 
     /* section 4 skill end here */
@@ -245,37 +260,40 @@
 
     #talk {
 
-            padding: 0;
+        padding: 0;
         padding-top: 40px;
         height: fit-content;
         padding-bottom: 40px;
 
     }
-    
-.talk-container p{
-    font-size: 0.9rem;
-}
-.button{
-    display: flex;
-    flex-direction: column;
-    
-    gap: 20px;
-    text-align: center;
-}
-.btn-one{
-    width: 100%;
-}
-.btn-sec{
-    width: 100%;
-    margin-left: 0;
-}
+
+    .talk-container p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+        text-align: center;
+    }
+
+    .btn-one {
+        width: 100%;
+    }
+
+    .btn-sec {
+        width: 100%;
+        margin-left: 0;
+    }
 
 
     /* section 5 talk end  here */
-  
+
     .footer-container {
         margin-top: 10px;
-          
+
         flex-direction: column;
         gap: 20px;
     }
@@ -287,9 +305,188 @@
 /* ========   TABLET  (min-width:768px) and (max-width:991px)   ========*/
 @media (min-width:768px) and (max-width:991px) {
 
-    body {
-        background-color: blue;
+
+
+    header {
+        padding: 0;
     }
+
+    nav {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    /* home section */
+    #home {
+        margin-top: 90px;
+    }
+
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+
+    .left-box {
+        width: 100%;
+
+    }
+
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .area {
+        font-size: 0.9rem;
+        width: 100%;
+        padding: 0;
+
+    }
+
+    .my-name {
+        font-size: 4.8rem;
+        letter-spacing: -0.25rem;
+    }
+
+    .my-description {
+        font-size: 1rem;
+        width: 80%;
+
+    }
+
+    .hero-btn {
+        width: 150px;
+
+    }
+
+    .hero-btn a {
+        font-size: 0.8rem;
+
+    }
+
+    .right-box {
+
+        width: 100%;
+        padding-top: 50px;
+    }
+
+    .contact-3d {
+        margin-top: -50px;
+        height: 20rem;
+    }
+
+    /* hero section end here */
+
+    /* section runner banner */
+    .banner {
+        animation: slide 5s linear infinite;
+    }
+
+    /* section runner banner end  */
+    /* section 2 about banner   */
+
+    #about {
+
+        padding: 0;
+        padding-top: 40px;
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .left-about,
+    .right-about {
+        width: 100%;
+
+
+    }
+
+    .head {
+
+
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+
+    .head-text {
+        font-size: 2.7rem;
+
+    }
+
+    .about-info {
+        font-size: 1.1rem;
+        margin-top: 20px;
+
+    }
+
+    .about-intro {
+        font-size: 0.8rem;
+        width: 100%;
+        line-height: 1.60em;
+    }
+
+    /* section 2 about banner end  */
+
+
+    /* section 3 project start  */
+
+    #project {
+        /* background-color: red; */
+        padding: 0;
+        padding-top: 40px;
+        height: fit-content;
+        padding-bottom: 40px;
+    }
+
+    .image {
+        height: 160px;
+    }
+
+    /* section 3 project  end here */
+    /* section 4 skill start here */
+
+    #skill {
+
+        padding: 0;
+        padding-top: 40px;
+        height: fit-content;
+        padding-bottom: 40px;
+
+    }
+
+    .skill-container {
+        flex-direction: column;
+
+
+    }
+
+    .left-skill,
+    .right-skill {
+        width: 100%;
+
+    }
+
+    .left-skill h3 {
+
+        font-size: 2.6rem;
+
+    }
+
+    .right-skill p {
+        font-size: 0.9rem;
+        margin: 15px 0 15px;
+    }
+
+
+
+
+
+
+
+
+
 
 
 }
@@ -298,10 +495,88 @@
 
 @media (min-width: 991px) and (max-width: 1199px) {
 
-    body {
-        background-color: rgb(0, 255, 34);
+   
+
+   
+
+    nav {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    #home {
+        margin-top: 90px;
+    }
+
+    .hero-container {
+        width: 90%;
+        margin: auto;
+    }
+
+    /* hero section end here */
+
+    /* section 2 about banner   */
+
+    #about {
+
+        height: fit-content;
+    }
+
+    .about-container {
+        width: 95%;
+        margin: auto;
+    }
+
+   
+
+    .head {
+
+
+        font-weight: 800;
+        font-size: 0.9rem;
+
+
+    }
+
+    .head-text {
+        color: var(--text);
+        font-size: 3.2rem;
+    }
+
+
+    /* section 2 about banner end  */
+
+
+    /* section 3 project start  */
+
+
+
+    .project-container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .image {
+        height: 225px;
+    }
+
+    .skill-container {
+        width: 95%;
+        margin: auto;
+    }
+
+    .icons span {
+        font-size: 0.7rem;
     }
 
 
 }
 
+
+@media (min-width:992px) {
+
+    .slide-menu {
+        display: none !important;
+    }
+
+}
