@@ -423,7 +423,7 @@ nav {
 
 .head-text {
     color: var(--text);
-    font-size: 4.4rem;
+    font-size: 3.8rem;
 }
 
 .head-text span {
@@ -686,10 +686,13 @@ nav {
 
     background: radial-gradient(ellipse at 75% 20%, rgba(215, 255, 100, 0.08), transparent 43%), var(--surface);
     padding: 50px;
+    padding-top: 20px;
 }
 
 .talk-container {
     text-align: center;
+   
+    margin-top: 30px;
 }
 
 .talk-container p {
@@ -753,12 +756,12 @@ nav {
 
 
 
-
 .footer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+ 
     margin-bottom: 20px;
 
 
